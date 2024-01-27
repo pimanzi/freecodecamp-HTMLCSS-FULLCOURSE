@@ -1,0 +1,15 @@
+a{
+    color: blue;
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color: red;
+}
+a:hover{
+    opacity: 0.7;
+}
+a:active{
+    color: pink;
+}

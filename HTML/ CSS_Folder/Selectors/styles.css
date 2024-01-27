@@ -1,0 +1,36 @@
+/* universal selector */*{
+    /* font-size: 24px; */
+}
+
+p{
+    font-family: monospace ! important; 
+}
+/* not good practice to use nuclear option(! important) */
+
+.blue{
+    color:blue
+}
+#article{
+    color: red;
+}
+
+h1,h2{
+    text-decoration: underline;
+}
+
+#article p{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    font-size:1.2rem ;
+    width:100vw
+}
+h1{
+    border: 2px dashed green;
+    width:50%;
+    padding-left: 0.5em;
+}
+

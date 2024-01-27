@@ -1,0 +1,38 @@
+body{
+    font-size:1.5rem;
+}
+
+.column{
+    column-count: 4;
+    column-width: 250px;
+    background-color: gold;
+    column-rule: 1px dashed black;
+    column-gap: 1rem;
+    
+}
+
+.column p{
+    margin-top: 0;
+
+}
+
+h2{
+    margin-top: 0;
+    background: black;
+    color: white;
+    height: 1em;
+    break-inside: avoid;
+    /* break-before:column ; */
+    
+}
+
+.column .quote{
+    font-size: 2.rem;
+    column-span: all;
+    text-align: center;
+
+
+}
+ span{
+    white-space: nowrap;
+ }

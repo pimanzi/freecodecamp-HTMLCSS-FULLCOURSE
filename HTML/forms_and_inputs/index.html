@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>I'd really like to hear from you!</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Jane"
+              autocomplete="on"
+              required
+              autofocus
+            />
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="your secret"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="5555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+            />
+          </p>
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2020"
+              step="10"
+              value="1980"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>what is your Favorite Coffee?</legend>
+          <div>
+            <label for="coffee">Favorite coffee </label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="coffee">
+                <option value="Regular coffee">Regular Coffee</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <optgroup label="expresso drinks">
+                <option value="latte" selected>latte</option>
+                <option value="cortado">cortado</option>
+                <option value="iced coffee">iced coffee</option>
+              </optgroup>
+              <option value="other">other</option>
+            </select>
+            <!-- <label for="coffee">favorite coffee</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list" />
+            <datalist id="coffee-list">
+              <option value="iced coffee">iced coffee</option>
+              <option value="americano">americano</option>
+              <option value="latte">latte</option>
+              <option value="other">other</option>
+            </datalist> -->
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your favorite food</legend>
+          <div>
+            <input type="radio" name="food" id="tacos" value="tacos" />
+            <label for="tacos">Tacos</label>
+          </div>
+          <div>
+            <input type="radio" name="food" id="chips" value="chips" />
+            <label for="chips">chips</label>
+          </div>
+          <div>
+            <input type="radio" name="food" id="fish" />
+            <label for="fish">fish</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What are your favorites musical instruments</legend>
+          <div>
+            <input type="checkbox" name="instrument" id="piano" />
+            <label for="piano">piano</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="instrument" id="guitar" />
+            <label for="guitar">guitar</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="instrument" id="flute" />
+            <label for="flute">flute</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message to us</legend>
+          <div>
+            <label for="message"> Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your note"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+        <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post"
+        ></button>
+      </form>
+    </article>
+  </body>
+</html>

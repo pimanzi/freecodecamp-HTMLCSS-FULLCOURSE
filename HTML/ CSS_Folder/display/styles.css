@@ -1,0 +1,32 @@
+main{
+    background-color: black;
+    padding-bottom: 2em;
+}
+
+li a{
+    font-size: 2em;
+    color: white;
+    display: block;
+    /* height: 100%; */
+    
+    
+    
+}
+
+ul{
+    text-align: right;
+}
+
+li{ 
+    display: inline-block;
+    margin-inline: 1em;
+    background-color: cadetblue;
+    /* padding: 2em; */
+    width: 200px;
+    text-align: center;
+}
+
+li a:hover{
+    background-color: blueviolet;
+}
+

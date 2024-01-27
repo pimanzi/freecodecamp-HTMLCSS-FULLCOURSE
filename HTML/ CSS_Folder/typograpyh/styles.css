@@ -1,0 +1,25 @@
+body{
+    font-size: 1.2rem;
+    color:purple;
+    text-align: center;
+}
+input,button{
+    font:inherit
+}
+input::placeholder{
+    color:green;
+}
+button{
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+    text-indent: 1em;
+    word-spacing: 0.8em;
+    /* letter-spacing: 1em; */
+    line-height: 2 ;
+}
+header{
+    text-transform: capitalize;
+}

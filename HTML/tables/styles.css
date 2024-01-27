@@ -1,0 +1,13 @@
+table{
+     border-collapse:collapse;
+    text-align: left;}
+
+th{
+    border: 1px solid green;
+}
+td{
+    border:1px solid black;
+}
+td[rowspan]{
+    /* border-bottom:none; */
+}

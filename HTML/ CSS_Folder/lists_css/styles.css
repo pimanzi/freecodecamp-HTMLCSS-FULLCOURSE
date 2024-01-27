@@ -1,0 +1,29 @@
+body{
+    padding: 5% 15%;
+}
+
+h1{
+    text-align: center;
+}
+
+ol{
+    list-style-type: lower-alpha;
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+    text-align: center;
+    line-height: 1.6;
+    margin-left: 10%;
+    /* list-style-image:url(checkmark.png);} */}
+
+::marker{
+    color: red;
+    content: "ONLY $5 per each ";
+    padding-left: 10%;
+}
+ul :nth-child(2){
+    color:gray;
+}
